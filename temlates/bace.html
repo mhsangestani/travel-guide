@@ -1,0 +1,156 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Travel Guide Blog | Free boostrap 4 template</title>
+
+    <!-- google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merienda|Open+Sans" rel="stylesheet">
+
+    <!-- Fonts awesome -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- style sheet --->
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+
+    <link href=logo.png rel=icon type=image/x-icon>
+</head>
+
+<body>
+    <section id="home">
+        <!-- Main Navbar -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <button class="navbar-toggler mr-auto custom-toggler" type="button" data-toggle="collapse"
+                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="#">
+                <img class="logo" src="{% static 'logo.png' %}" alt="">
+            </a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item current">
+                        <a class="nav-link smoothscroll" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothscroll" href="#main">Places</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothscroll" href="#gallery">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothscroll" href="#about">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link smoothscroll" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <!-- End of Navbar-->
+        <header>
+            <div class="header-overlay"></div>
+            <div class="video-header wrap">
+                <div class="fullscreen-video-wrap">
+                    <video src="{% static 'media/home-bg.mp4' %}" autoplay loop muted></video>
+                </div>
+                <div class="header-content">
+                    <h1 class="display-4 mb-4">Travel Guide</h1>
+                    <h2 class="mb-5">A complete Explorer's Document</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic vero nihil impedit dolore minima
+                        illum ducimus, beatae deleniti quas temporibus!</p>
+                    <button onclick="location.href='javascript:'" class="btn btn-header"> Read More</button>
+                </div>
+            </div>
+        </header>
+        <!-- end of header section -->
+
+    </section>
+    <!-- end of home section -->
+
+    {%block content%}
+
+    {% endblock %}
+
+    <!-- footer section -->
+    <section id="footer">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-3 col-sm-10 mx-auto mb-5">
+                    <h4>Our Services</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, ducimus, hic! Itaque aliquam
+                        inventore nobis magni error enim quod, temporibus.</p>
+                    <button class="btn btn-footer">Read more</button>
+                </div>
+                <div class="col-md-2 col-sm-10 mx-auto mb-5">
+                    <h4>Quick Links</h4>
+                    <hr>
+                    <ul class="footer-list">
+                        <li class="footer-item"><a href="javascript:;">Home</a></li>
+                        <li class="footer-item"><a href="javascript:;">Places</a></li>
+                        <li class="footer-item"><a href="javascript:;">Gallery</a></li>
+                        <li class="footer-item"><a href="javascript:;">About Us</a></li>
+                        <li class="footer-item"><a href="javascript:;">Contact Us</a></li>
+                        <li class="footer-item"><a href="javascript:;">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-10 mx-auto mb-5">
+                    <h4>Follow Us</h4>
+                    <hr>
+                    <ul class="footer-list-social">
+                        <li class='icon social fb'><i class='fa fa-facebook'></i></li>
+                        <li class='icon social tw'><i class='fa fa-twitter'></i></li>
+                        <li class='icon social in'><i class='fa fa-linkedin'></i></li>
+                    </ul>
+                </div>
+                <div class="col-md-5">
+                    <h4>Subscribe Today</h4>
+                    <hr>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident illum eveniet architecto,
+                        magnam facilis soluta eos officiis commodi iure. Asperiores?</p>
+                    <div class="subscribe">
+                        <form action="#" class=" mt-4">
+                            <div class="input-group">
+                                <input class="btn" name="email" id="email" type="email" placeholder="Your Email"
+                                    required>
+                                <button class="btn btn-grey" type="submit"><i class="fa fa-paper-plane-o"
+                                        aria-hidden="true"></i></button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- end of footer section-->
+
+    <!-- footer-end -->
+    <section id="footer-end">
+        <div class="container">
+            <p> &copy; 2018 Company name. All rights Reserved. | <a href="https://gecdesigns.com/">Designed By GEC
+                    Designs</a></p>
+        </div>
+    </section>
+    <!-- end of footer-end -->
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <!-- main js -->
+    <script src="{% static 'js/main.js' %}"></script>
+
+</body>
+
+</html>
